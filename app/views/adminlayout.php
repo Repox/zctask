@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,7 +28,20 @@
     endif; ?>
 
 
-    <?php echo $content; ?>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="<?php echo url('/dashboard'); ?>">Dashboard</a></li>
+          <li><a href="<?php echo url('/createuser'); ?>">Opret bruger</a></li>
+          <li><a href="<?php echo url('/creategroup'); ?>">Opret gruppe</a></li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <?php echo $content; ?>
+      </div>
+    </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

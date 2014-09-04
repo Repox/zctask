@@ -1,6 +1,6 @@
 {
     "require": {
-        "dannyvankooten/php-router": "dev-master"
+        "altorouter/altorouter": "dev-master"
     },
     "autoload": {
         "psr-4": {"Zitcom\\": "app/"},

@@ -27,3 +27,8 @@ function redirect($url, $response_code = null)
 function url($uri){
 	return sprintf("%s://%s%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', $_SERVER['SERVER_NAME'], $uri);
 }
+
+function now()
+{
+    return date("Y-m-d H:i:s");
+}

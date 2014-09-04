@@ -32,7 +32,7 @@ class ViewMaker
 
 		$view_file = app_path()."/views/".$view.".php";
 		if(!file_exists($view_file))
-			throw new Exception("View file {$view_file} does not exist in ".app_path()."/views", 1);					
+			throw new \Exception("View file {$view_file} does not exist in ".app_path()."/views", 1);					
 
 		return $view_file;
 	}

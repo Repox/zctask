@@ -1,82 +1,29 @@
 [
     {
-        "name": "symfony/yaml",
-        "version": "v2.5.4",
-        "version_normalized": "2.5.4.0",
-        "target-dir": "Symfony/Component/Yaml",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Yaml.git",
-            "reference": "01a7695bcfb013d0a15c6757e15aae120342986f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Yaml/zipball/01a7695bcfb013d0a15c6757e15aae120342986f",
-            "reference": "01a7695bcfb013d0a15c6757e15aae120342986f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2014-08-31 03:22:04",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.5-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\Yaml\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            },
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }
-        ],
-        "description": "Symfony Yaml Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "dannyvankooten/php-router",
+        "name": "altorouter/altorouter",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/dannyvankooten/PHP-Router.git",
-            "reference": "beb6f5426841b382b08a637688be3b0e6f119640"
+            "url": "https://github.com/dannyvankooten/AltoRouter.git",
+            "reference": "cd145f993e4c6cd2dc16035571eb17a22ff1c17b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dannyvankooten/PHP-Router/zipball/beb6f5426841b382b08a637688be3b0e6f119640",
-            "reference": "beb6f5426841b382b08a637688be3b0e6f119640",
+            "url": "https://api.github.com/repos/dannyvankooten/AltoRouter/zipball/cd145f993e4c6cd2dc16035571eb17a22ff1c17b",
+            "reference": "cd145f993e4c6cd2dc16035571eb17a22ff1c17b",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.3.3",
-            "symfony/yaml": "@dev"
+            "php": ">=5.3.0"
         },
-        "require-dev": {
-            "phpunit/phpunit": "3.7.*"
-        },
-        "time": "2014-08-23 15:56:39",
+        "time": "2014-05-10 12:58:06",
         "type": "library",
         "installation-source": "source",
         "autoload": {
-            "psr-0": {
-                "PHPRouter": "src/"
-            }
+            "classmap": [
+                "AltoRouter.php"
+            ]
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
@@ -89,15 +36,18 @@
                 "homepage": "http://dannyvankooten.com/"
             },
             {
-                "name": "Jefersson Nathan",
-                "email": "malukenho@phpse.net"
+                "name": "Koen Punt",
+                "homepage": "https://github.com/koenpunt"
+            },
+            {
+                "name": "niahoo",
+                "homepage": "https://github.com/niahoo"
             }
         ],
-        "description": "Simple PHP Router, supports REST and reverse routing.",
-        "homepage": "https://github.com/dannyvankooten/PHP-Router",
+        "description": "A lightning fast router for PHP",
+        "homepage": "https://github.com/dannyvankooten/AltoRouter",
         "keywords": [
-            "php",
-            "rest",
+            "lightweight",
             "router",
             "routing"
         ]
