@@ -1,0 +1,10 @@
+{
+    "require": {
+        "dannyvankooten/php-router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {"Zitcom\\": "app/"},
+        "files": ["app/helpers.php"]
+    }    
+
+}
