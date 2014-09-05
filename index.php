@@ -26,18 +26,18 @@ $router->map('POST','/user/edit/[i:id]', '\Zitcom\Controllers\AdminController.po
 $router->map('POST','/group/edit/[i:id]', '\Zitcom\Controllers\AdminController.posteditgroup', 'edit_group_post');
 
 // Simple API version
-$router->map('GET','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.singleuser', 'edit_user');
-$router->map('GET','/api/users', '\Zitcom\Controllers\ApiController.allusers', 'all_users');
-$router->map('POST','/api/user', '\Zitcom\Controllers\ApiController.createuser', 'create_user');
-$router->map('PUT','/api/user', '\Zitcom\Controllers\ApiController.updateuser', 'update_user');
-$router->map('DEÆETE','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.deleteuser', 'delete_user');
+$router->map('GET','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.singleuser', 'api_edit_user');
+$router->map('GET','/api/users', '\Zitcom\Controllers\ApiController.allusers', 'api_all_users');
+$router->map('POST','/api/user', '\Zitcom\Controllers\ApiController.createuser', 'api_create_user');
+$router->map('PUT','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.updateuser', 'api_update_user');
+$router->map('DELETE','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.deleteuser', 'api_delete_user');
 
 
-$router->map('GET','/api/group/[i:id]', '\Zitcom\Controllers\ApiController.singleuser', 'edit_user');
-$router->map('GET','/api/group', '\Zitcom\Controllers\ApiController.allusers', 'all_users');
-$router->map('POST','/api/group', '\Zitcom\Controllers\ApiController.createuser', 'create_user');
-$router->map('PUT','/api/user', '\Zitcom\Controllers\ApiController.updateuser', 'update_user');
-$router->map('DEÆETE','/api/user/[i:id]', '\Zitcom\Controllers\ApiController.deleteuser', 'delete_user');
+$router->map('GET','/api/group/[i:id]', '\Zitcom\Controllers\ApiController.singlegroup', 'api_edit_group');
+$router->map('GET','/api/groups', '\Zitcom\Controllers\ApiController.allgroups', 'api_all_groups');
+$router->map('POST','/api/group', '\Zitcom\Controllers\ApiController.creategroup', 'api_create_group');
+$router->map('PUT','/api/group/[i:id]', '\Zitcom\Controllers\ApiController.updategroup', 'api_update_group');
+$router->map('DELETE','/api/group/[i:id]', '\Zitcom\Controllers\ApiController.deletegroup', 'api_delete_group');
 
 
 
