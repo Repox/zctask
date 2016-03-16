@@ -38,7 +38,7 @@
         </ul>
       </div>
       <div class="col-md-9">
-        <?php echo $content; ?>
+        <?php echo issetOr($content); ?>
       </div>
     </div>
     </div>

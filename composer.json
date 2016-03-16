@@ -3,7 +3,7 @@
         "altorouter/altorouter": "dev-master"
     },
     "autoload": {
-        "psr-4": {"Zitcom\\": "app/"},
+        "psr-4": {"UserApp\\": "app/"},
         "files": ["app/helpers.php"]
     }    
 

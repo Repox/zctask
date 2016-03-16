@@ -1,8 +1,8 @@
 <?php
 
-namespace Zitcom\Controllers;
-use Zitcom\Services\ViewMaker;
-use Zitcom\Models\Crud;
+namespace UserApp\Controllers;
+use UserApp\Services\ViewMaker;
+use UserApp\Models\Crud;
 
 class IndexController
 {
@@ -38,7 +38,7 @@ class IndexController
 
 		$groups = $crud->read('group_user, groups', 'group_user.user_id=:user_id AND group_user.group_id=groups.id', [':user_id' => $user[0]['id']]);
 
-		$view = new ViewMaker();
+		$view = new ViewMaker('adminlayout');
 		$view->render('loggedin', ['user' => $user[0], 'groups' => $groups]);
 	}
 

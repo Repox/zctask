@@ -1,6 +1,6 @@
 <?php
 
-namespace Zitcom\Models;
+namespace UserApp\Models;
 
 class Crud
 {

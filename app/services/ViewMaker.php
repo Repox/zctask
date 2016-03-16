@@ -1,5 +1,5 @@
 <?php
-namespace Zitcom\Services;
+namespace UserApp\Services;
 
 class ViewMaker
 {
@@ -8,12 +8,11 @@ class ViewMaker
 
 	public function __construct($layout_file = 'layout')
 	{
-		$this->layout = $this->_view_file_path($layout_file);	
+		$this->layout = $this->_view_file_path($layout_file);
 	}
 
 	public function render($view, Array $view_data = array())
 	{
-		// One of the questions from the interview ;)
 		foreach($view_data as $key => $value)
 			$$key = $value;
 

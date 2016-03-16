@@ -1,8 +1,8 @@
 <?php
 
-namespace Zitcom\Controllers;
-use Zitcom\Services\ViewMaker;
-use Zitcom\Models\Crud;
+namespace UserApp\Controllers;
+use UserApp\Services\ViewMaker;
+use UserApp\Models\Crud;
 
 class AdminController
 {
@@ -12,6 +12,9 @@ class AdminController
 	public function __construct()
 	{
 		$this->crud = new Crud;
+		if(!isset($_SESSION['user_id']))
+			exit('Du er ikke logget ind!');
+
 	}
 	
 	public function index()

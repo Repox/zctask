@@ -1,7 +1,7 @@
 <?php
 
-namespace Zitcom\Controllers;
-use Zitcom\Models\Crud;
+namespace UserApp\Controllers;
+use UserApp\Models\Crud;
 
 class ApiController
 {

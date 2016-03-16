@@ -1,8 +1,8 @@
 <?php
 
-namespace Zitcom\Controllers;
-use Zitcom\Services\ViewMaker;
-use Zitcom\Models\Crud;
+namespace UserApp\Controllers;
+use UserApp\Services\ViewMaker;
+use UserApp\Models\Crud;
 
 
 class LoginController
